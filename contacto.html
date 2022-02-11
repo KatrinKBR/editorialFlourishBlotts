@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editorial Flourish & Blotts</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Inicio del NavBar -->
+    <div class="navBar">
+        <div class="navBarLogo">
+            <img src="./assets/logo-menu.png" alt="Logo">
+        </div>
+        <ul class="navBarElements">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="libros.html">Libros</a></li>
+            <li><a href="autores.html">Autores</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+    <!-- Fin del NavBar -->
+    
+    <div class="banner">
+        <p>Contáctanos</p>
+    </div>
+
+    <div class="content">
+        <p class="title">Envíenos sus datos de contacto y comentarios</p>
+        <form>
+            <div class="form-block">
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" id="nombre">
+            </div>
+
+            <div class="form-block">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Ingrese su e-mail" id="email">
+            </div>
+            
+            <div class="form-block">
+                <label for="motivo">Motivo del contacto</label>
+                <select id="motivo">
+                    <option value="comercial">Comercial</option>
+                    <option value="consulta">Consutla</option>
+                    <option value="cotizaciones">Cotizaciones</option>
+                    <option value="reclamo">Sugerencias/Reclamos</option>
+                </select>
+            </div>
+
+            <div class="form-block">
+                <textarea placeholder="Ingrese su mensaje"></textarea>
+            </div>
+            <input type="button" value="Enviar">
+        </form>
+    </div>
+
+    <div id="footer">
+        <div class="footerElement">
+            <p class="footerTitle">Sobre nosotros</p>
+            <p>Editorial Flourish&Blotts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed leo a nibh mollis pellentesque. 
+                Curabitur malesuada velit neque, quis consequat est facilisis ac.
+            </p>
+        </div>
+        <div class="footerElement">
+            <p class="footerTitle">Ubicación</p>
+            <p>Av. Lorem Ipsum 123, Sit Amet, Adipiscing.</p>
+            <p>Sonsectetur Adipiscing 321, Curabitur, Mollis.</p>
+        </div>
+        <div class="footerElement">
+            <p class="footerTitle">Síguenos</p>
+            <a href="#footer"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="#footer"><img src="./assets/facebook.png" alt="Facebook"></a>
+            <a href="#footer"><img src="./assets/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+</body>
+</html>

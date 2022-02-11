@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Merriweather', serif;
+}
+
+textarea {
+    resize: none;
+    width: 20rem;
+    height: 10rem;
+}
+
+.navBar {
+    background-color: #E6DDC4;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 5rem;
+}
+.navBar .navBarElements {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap; /* Por ahora para que en mobile no se extienda */
+    align-items: center;
+}
+.navBarElements li {
+    display: inline-block;
+    padding-left: 15px;
+    text-decoration: none
+}
+.navBarElements li a {
+    color: #181D31;
+    text-decoration: none;
+}
+.navBarElements li a:hover {
+    color: #678983;
+}
+
+.banner {
+    background-image: url('../assets/banner.png');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.banner p {
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: #181D31;
+    padding-top: 2rem;
+}
+
+.content {
+    text-align: justify;
+}
+.content .title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 2em 0;
+    text-align: center;
+}
+.content .contentGrid {
+    display: grid;
+    grid-row-gap: 2rem;
+    justify-items: center;
+}
+.content .img-content {
+    display: inline-block;
+}
+
+.content .bookBox {
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E4E4E4;
+    padding: 0.75rem 0.75rem;
+    margin: 0 0.75em;
+    max-width: 626px;
+}
+.bookBox .bookBoxTitle {
+    font-style: italic;
+    font-size: 1.25rem;
+    margin: .75em 0;
+}
+
+.bookBox a {
+    color: #678983;
+}
+
+.bookBox .bookBoxLink {
+    margin-top: .75em;
+    float: right;
+}
+
+.form-block {
+    display: block;
+    margin-top: .75rem;
+}
+
+.info {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 3em;
+}
+.info .infoLibros{
+    align-self: center;
+    margin: 2em 2em;
+}
+.info .infoImg {
+    align-self: center;
+    margin-top: 3em
+}
+.info .infoBookTitle {
+    font-style: italic;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+    text-align: center
+}
+.info .infoTitle {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+.info .infoText {
+    margin-bottom: 1.5em;
+}
+
+#segundoLibro {
+    background-color: #F0E9D2;
+}
+
+#footer {
+    background-color: #181D31;
+    color: #fff;
+    margin-top: 3em;
+    padding: 2em 1em;
+}
+
+#footer .footerTitle {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: .5em 0;
+}
+
+#footer .footerElement {
+    margin-bottom: 1em;
+    font-size: .75em;
+    text-align: justify;
+}
+
+@media all and (min-width:768px) and (max-width:991px){
+    .navBarElements li a {
+        font-size: 1.5em;
+    }
+    .banner p {
+        font-size: 2.75em;
+        padding-top: 3rem;
+    }
+    .content .title{
+        font-size: 2em;
+    }
+    .content .bookBox {
+        padding: 2rem 2rem;
+        margin: 0 0;
+    }
+    .info .infoText {
+        font-size: 1.5em;
+    }
+    .info .infoTitle {
+        margin: 1em 2.75em
+    }
+}
+
+@media all and (min-width:992px){
+    #footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #footer .footerElement {
+        max-width: 25%;
+    }
+    .banner p {
+        font-size: 2.75em;
+    }
+    .content .title{
+        font-size: 2em;
+        margin: 2em 5em;
+        text-align: left;
+    }
+    .content .contentGrid {
+        grid-template-columns: auto auto;
+        margin: 0 10em;
+    }
+    .content .bookBox {
+        padding: 2rem 2rem;
+        margin: 0 0;
+    }
+    .info {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 3em 3em;
+    }
+    .info .infoLibros {
+        align-self: center;
+        margin: 0 3em;
+    }
+    .info .infoText {
+        margin: 0 0
+    }
+    .info .infoTitle {
+        margin: 1em 0em
+    }
+}
+
