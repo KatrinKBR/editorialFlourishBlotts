@@ -6,6 +6,10 @@ body {
     font-family: 'Merriweather', serif !important;
 }
 
+body a:hover {
+    color: #181D31 !important;
+}
+
 textarea {
     resize: none;
     width: 20rem;
@@ -17,9 +21,6 @@ textarea {
 }
 .navbar-custom a {
     color: #678983;
-}
-.navbar-custom a:hover {
-    color: #181D31;
 }
 .custom-toggler .navbar-toggler-icon{
 	background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3Csvg height='25px' version='1.1' viewBox='0 0 25 25' width='25px' id='svg63' sodipodi:docname='hamburger.svg' inkscape:version='1.1.2 (b8e25be833  2022-02-05)' xmlns:inkscape='http://www.inkscape.org/namespaces/inkscape' xmlns:sodipodi='http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Csodipodi:namedview id='namedview65' pagecolor='%23505050' bordercolor='%23eeeeee' borderopacity='1' inkscape:pageshadow='0' inkscape:pageopacity='0' inkscape:pagecheckerboard='0' showgrid='false' inkscape:zoom='17.96' inkscape:cx='12.5' inkscape:cy='12.5' inkscape:window-width='1366' inkscape:window-height='658' inkscape:window-x='0' inkscape:window-y='27' inkscape:window-maximized='1' inkscape:current-layer='TabBar-Icons' /%3E%3Ctitle id='title53' /%3E%3Cdesc id='desc55' /%3E%3Cdefs id='defs57' /%3E%3Cg fill='none' fill-rule='evenodd' id='TabBar-Icons' stroke='none' stroke-width='1'%3E%3Cg fill='%23000000' id='Hamburger' style='fill:%23181d31%3Bfill-opacity:1'%3E%3Cpath d='M0 2 L25 2 L25 6 L0 6 L0 2 Z M0 10 L25 10 L25 14 L0 14 L0 10 Z M0 18 L25 18 L25 22 L0 22 L0 18 Z' id='path59' style='fill:%23181d31%3Bfill-opacity:1' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -49,11 +50,7 @@ textarea {
     margin: 2em 0;
     text-align: center;
 }
-.content .contentGrid {
-    display: grid;
-    grid-row-gap: 2rem;
-    justify-items: center;
-}
+
 .content .img-content {
     display: inline-block;
 }
@@ -74,7 +71,6 @@ textarea {
 .bookBox a {
     color: #678983;
 }
-
 .bookBox .bookBoxLink {
     margin-top: .75em;
     float: right;
@@ -143,18 +139,18 @@ textarea {
     margin-top: .75rem;
 }
 
-#footer {
+.footer {
     background-color: #181D31;
     color: #fff;
     margin-top: 3em;
     padding: 2em 1em;
 }
-#footer .footerTitle {
+.footer .footerTitle {
     font-weight: bold;
     font-size: 1.2em;
     margin: .5em 0;
 }
-#footer .footerElement {
+.footer .footerElement {
     margin-bottom: 1em;
     font-size: .75em;
     text-align: justify;
@@ -184,25 +180,20 @@ textarea {
 }
 
 @media all and (min-width:992px){
-    #footer {
+/*     .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #footer .footerElement {
+    .footer .footerElement {
         max-width: 25%;
-    }
+    } */
     .banner p {
         font-size: 2.75em;
     }
     .content .title{
         font-size: 2em;
-        margin: 2em 5em;
         text-align: left;
-    }
-    .content .contentGrid {
-        grid-template-columns: auto auto;
-        margin: 0 10em;
     }
     .content .bookBox {
         padding: 2rem 2rem;
