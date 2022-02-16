@@ -154,15 +154,6 @@ textarea {
     text-align: justify;
 }
 
-@media all and (min-width:768px) and (max-width:991px){
-    .info .infoText {
-        font-size: 1.5em;
-    }
-    .info .infoTitle {
-        margin: 1em 2.75em
-    }
-}
-
 @media all and (min-width:992px){
     .info {
         flex-direction: row;
