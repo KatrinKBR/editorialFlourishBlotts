@@ -101,15 +101,7 @@ textarea {
 .overlay:hover .overlayText {
     opacity: 1;
 }
-.info {
-    display: flex;
-    flex-flow: column wrap;
-    padding-bottom: 3em;
-}
-.info .infoLibros{
-    align-self: center;
-    margin: 2em 2em;
-}
+
 .info .infoImg {
     align-self: center;
     margin-top: 3em
@@ -159,10 +151,6 @@ textarea {
         flex-direction: row;
         flex-wrap: nowrap;
         padding: 3em 3em;
-    }
-    .info .infoLibros {
-        align-self: center;
-        margin: 0 3em;
     }
     .info .infoText {
         margin: 0 0
