@@ -6,6 +6,10 @@ body {
     font-family: 'Merriweather', serif !important;
 }
 
+body a:hover {
+    color: #181D31 !important;
+}
+
 textarea {
     resize: none;
     width: 20rem;
@@ -49,11 +53,7 @@ textarea {
     margin: 2em 0;
     text-align: center;
 }
-.content .contentGrid {
-    display: grid;
-    grid-row-gap: 2rem;
-    justify-items: center;
-}
+
 .content .img-content {
     display: inline-block;
 }
@@ -146,18 +146,18 @@ textarea {
     margin-top: .75rem;
 }
 
-#footer {
+.footer {
     background-color: #181D31;
     color: #fff;
     margin-top: 3em;
     padding: 2em 1em;
 }
-#footer .footerTitle {
+.footer .footerTitle {
     font-weight: bold;
     font-size: 1.2em;
     margin: .5em 0;
 }
-#footer .footerElement {
+.footer .footerElement {
     margin-bottom: 1em;
     font-size: .75em;
     text-align: justify;
@@ -187,25 +187,20 @@ textarea {
 }
 
 @media all and (min-width:992px){
-    #footer {
+/*     .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    #footer .footerElement {
+    .footer .footerElement {
         max-width: 25%;
-    }
+    } */
     .banner p {
         font-size: 2.75em;
     }
     .content .title{
         font-size: 2em;
-        margin: 2em 5em;
         text-align: left;
-    }
-    .content .contentGrid {
-        grid-template-columns: auto auto;
-        margin: 0 10em;
     }
     .content .bookBox {
         padding: 2rem 2rem;
