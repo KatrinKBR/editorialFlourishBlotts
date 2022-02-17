@@ -121,3 +121,7 @@ textarea {
     font-size: .8em;
     text-align: justify;
 }
+.btn.btn-primary {
+    background-color: #181D31 !important;
+    border-color: #181D31 !important;
+}
