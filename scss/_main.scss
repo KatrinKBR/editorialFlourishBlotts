@@ -1,10 +1,5 @@
 body {
     font-family: 'Merriweather', serif !important;
-    a {
-        &:hover{
-            color: $dark-blue !important;
-        }
-    }
 }
 
 .navbar-custom{
@@ -22,12 +17,11 @@ body {
 }
 
 .banner {
-    background-image: url('../assets/banner.png');
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    margin-bottom: 2em;
+    background-image: map-get($banner-style,bgImg);
+    background-position: map-get($banner-style,bgPosition);
+    background-size: map-get($banner-style,bgSize);
+    @include setSize(map-get($banner-style,width), map-get($banner-style,height));
+    margin-bottom: map-get($banner-style,marginB);
     
     p {
         color: $dark-blue;
@@ -43,12 +37,12 @@ body {
     }
 
     .bookBox {
-        border-style: solid;
-        border-width: 1px 1px 1px 1px;
-        border-color: $light-beige;
-        padding: 0.75rem 0.75rem;
-        margin: 0 0.75em;
-        max-width: 626px;
+        border-style: map-get($bookBox-style,borderStyle);
+        border-width: map-get($bookBox-style,borderWidth);
+        border-color: map-get($bookBox-style,borderColor);
+        padding: map-get($bookBox-style,padding);
+        margin: map-get($bookBox-style,margin);
+        max-width: map-get($bookBox-style,maxWidth);
 
         a{
             color: $turquoise;
@@ -82,22 +76,22 @@ body {
     }
 
     .overlayImage {
-        opacity: 1;
         display: block;
-        width: 100%;
-        height: auto;
+        opacity: 1;
+        @include setSize(100%, auto);
         transition: .5s ease;
     }
 
     .overlayText {
-        transition: .5s ease;
-        opacity: 0;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
         text-align: center;
         color: $dark-blue;
+        transition: .5s ease;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+
     }
 }
 
