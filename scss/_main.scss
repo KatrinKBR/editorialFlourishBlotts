@@ -24,7 +24,7 @@ body {
     background-position: map-get($banner-style,bgPosition);
     background-size: map-get($banner-style,bgSize);
     @include setSize(map-get($banner-style,width), map-get($banner-style,height));
-    margin-bottom: map-get($banner-style,marginB);
+    min-height: map-get($banner-style,minHeight);
     
     p {
         color: $dark-blue;
@@ -50,6 +50,14 @@ body {
         &::after{
             margin-left: .5rem;
         }
+
+        @media only screen and (min-width: 1200px) {
+            margin: 0 10.5em;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1199px){
+            margin: 0 2em;
+        }
+
     }
 
     .bookBox {
@@ -73,6 +81,9 @@ body {
 
         .bookBoxTitle{
             margin: .75em 0;
+            @media only screen and (max-width: 1199px){
+                margin-top: 2em
+            }
         }
     }
 }
@@ -101,13 +112,23 @@ body {
     .overlayText {
         position: absolute;
         top: 50%;
-        left: 50%;
+        @include setSize(100%, 100%);
         text-align: center;
         color: $dark-blue;
         transition: .5s ease;
         opacity: 0;
-        transform: translate(-50%, -50%);
-
+        h3 {
+            font-size: 1.25rem
+        }
+        @media only screen and (max-width: 1199px){
+            top: 100%;
+            text-align: right;
+            opacity: 1;
+            margin: .75rem 0;
+            h3{
+                font-size: .85rem;
+            }
+        }
     }
 }
 
@@ -148,16 +169,5 @@ body {
         line-height: 2.75rem;
         padding: 0;
         border-radius: 2em;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .title {
-        margin: 0 10.5em;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px){
-    .title {
-        margin: 0 2em;
     }
 }

@@ -24,12 +24,12 @@ body {
 }
 
 .banner {
-  background-image: url("../assets/banner.png");
+  background-image: url("../assets/banner.webp");
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 50vh;
-  margin-bottom: 2em;
+  min-height: 380px;
 }
 
 .banner p {
@@ -70,6 +70,18 @@ body {
   margin-left: .5rem;
 }
 
+@media only screen and (min-width: 1200px) {
+  .content .title {
+    margin: 0 10.5em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .content .title {
+    margin: 0 2em;
+  }
+}
+
 .content .bookBox {
   border-style: solid;
   border-width: 1px 1px 1px 1px;
@@ -93,6 +105,12 @@ body {
 
 .content .bookBox .bookBoxTitle {
   margin: .75em 0;
+}
+
+@media only screen and (max-width: 1199px) {
+  .content .bookBox .bookBoxTitle {
+    margin-top: 2em;
+  }
 }
 
 .overlay {
@@ -122,14 +140,29 @@ body {
 .overlay .overlayText {
   position: absolute;
   top: 50%;
-  left: 50%;
+  width: 100%;
+  height: 100%;
   text-align: center;
   color: #181D31;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+}
+
+.overlay .overlayText h3 {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1199px) {
+  .overlay .overlayText {
+    top: 100%;
+    text-align: right;
+    opacity: 1;
+    margin: .75rem 0;
+  }
+  .overlay .overlayText h3 {
+    font-size: .85rem;
+  }
 }
 
 .infoTitle {
@@ -169,17 +202,5 @@ body {
   line-height: 2.75rem;
   padding: 0;
   border-radius: 2em;
-}
-
-@media only screen and (min-width: 1200px) {
-  .title {
-    margin: 0 10.5em;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .title {
-    margin: 0 2em;
-  }
 }
 /*# sourceMappingURL=style.css.map */

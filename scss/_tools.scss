@@ -1,10 +1,10 @@
 $banner-style:(
-    bgImg: url('../assets/banner.png'),
+    bgImg: url('../assets/banner.webp'),
     bgPosition: center,
     bgSize: cover,
     width: 100%,
     height: 50vh,
-    marginB: 2em
+    minHeight: 380px
 );
 
 $bookBox-style:(
