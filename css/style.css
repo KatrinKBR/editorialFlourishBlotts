@@ -32,8 +32,9 @@ body {
   min-height: 380px;
 }
 
-.banner p {
+.banner p, .banner h1 {
   color: #181D31;
+  text-shadow: 1px 1px 3px #F0E9D2;
 }
 
 .content {

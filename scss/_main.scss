@@ -26,8 +26,9 @@ body {
     @include setSize(map-get($banner-style,width), map-get($banner-style,height));
     min-height: map-get($banner-style,minHeight);
     
-    p {
+    p, h1 {
         color: $dark-blue;
+        text-shadow: 1px 1px 3px $dark-beige;
     }
 }
 
