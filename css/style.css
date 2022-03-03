@@ -114,6 +114,24 @@ body {
   }
 }
 
+.info:nth-child(2n) {
+  background-color: #F0E9D2;
+}
+
+.info:nth-child(2n) .infoImg {
+  -webkit-box-ordinal-group: 3 !important;
+      -ms-flex-order: 2 !important;
+          order: 2 !important;
+}
+
+@media all and (max-width: 1199px) {
+  .info:nth-child(2n) .infoImg {
+    -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
+            order: 0 !important;
+  }
+}
+
 .overlay {
   position: relative;
   width: 100%;

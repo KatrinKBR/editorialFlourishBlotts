@@ -51,14 +51,12 @@ body {
         &::after{
             margin-left: .5rem;
         }
-
         @media only screen and (min-width: 1200px) {
             margin: 0 10.5em;
         }
         @media only screen and (min-width: 768px) and (max-width: 1199px){
             margin: 0 2em;
         }
-
     }
 
     .bookBox {
@@ -85,6 +83,16 @@ body {
             @media only screen and (max-width: 1199px){
                 margin-top: 2em
             }
+        }
+    }
+}
+
+.info:nth-child(2n) {
+    background-color: $dark-beige;
+    .infoImg{
+        order: 2 !important;
+        @media all and (max-width: 1199px){
+            order: 0 !important;
         }
     }
 }
