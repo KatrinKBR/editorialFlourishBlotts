@@ -91,7 +91,7 @@ body {
     background-color: $dark-beige;
     .infoImg{
         order: 2 !important;
-        @media all and (max-width: 1199px){
+        @media all and (max-width: 1399px){
             order: 0 !important;
         }
     }
