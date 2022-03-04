@@ -87,7 +87,25 @@ body {
     }
 }
 
-.info:nth-child(2n) {
+.info{
+    @media all and (max-width: 1399px){
+        padding: 0 4em !important
+    }
+    @media all and (min-width: 1400px){
+        padding: 0 8em !important
+    }
+    &:nth-child(2n) {
+        background-color: $dark-beige;
+        .infoImg{
+            order: 2 !important;
+            @media all and (max-width: 1399px){
+                order: 0 !important;
+            }
+        }
+    }
+}
+
+/* .info:nth-child(2n) {
     background-color: $dark-beige;
     .infoImg{
         order: 2 !important;
@@ -95,7 +113,7 @@ body {
             order: 0 !important;
         }
     }
-}
+} */
 
 .overlay {
     position: relative;
