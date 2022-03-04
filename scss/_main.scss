@@ -64,7 +64,7 @@ body {
         border-width: map-get($bookBox-style,borderWidth);
         border-color: map-get($bookBox-style,borderColor);
         padding: map-get($bookBox-style,padding);
-        margin: map-get($bookBox-style,margin);
+        // margin: map-get($bookBox-style,margin);
         max-width: map-get($bookBox-style,maxWidth);
 
         a{
