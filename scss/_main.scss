@@ -121,7 +121,7 @@ body {
     .overlayText {
         position: absolute;
         top: 50%;
-        @include setSize(100%, 100%);
+        width: 100%;
         text-align: center;
         color: $dark-blue;
         transition: .5s ease;
