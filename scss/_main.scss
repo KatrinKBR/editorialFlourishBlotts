@@ -19,13 +19,25 @@ body {
 	background-image: url('../assets/hamburger.svg');
 }
 
+.btn {
+    &.btn-primary {
+        background-color: $dark-blue !important;
+        border-color: $dark-blue !important;
+    }
+    &.btn-redes{
+        width: 3rem;
+        height: 3rem;
+        padding: 0;
+        border-radius: 2em;
+    }
+}
+
 .banner {
     background-image: map-get($banner-style,bgImg);
     background-position: map-get($banner-style,bgPosition);
     background-size: map-get($banner-style,bgSize);
     @include setSize(map-get($banner-style,width), map-get($banner-style,height));
     min-height: map-get($banner-style,minHeight);
-    
     p, h1 {
         color: $dark-blue;
         text-shadow: 1px 1px 3px $dark-beige;
@@ -34,7 +46,6 @@ body {
 
 .content {
     text-align: justify;
-
     .title {
         display: flex;
         flex-flow: row wrap;
@@ -58,13 +69,11 @@ body {
             margin: 0 2em;
         }
     }
-
     .bookBox {
         border-style: map-get($bookBox-style,borderStyle);
         border-width: map-get($bookBox-style,borderWidth);
         border-color: map-get($bookBox-style,borderColor);
         padding: map-get($bookBox-style,padding);
-        // margin: map-get($bookBox-style,margin);
         max-width: map-get($bookBox-style,maxWidth);
 
         a{
@@ -73,11 +82,9 @@ body {
                 color: $dark-blue;
             }
         }
-
         .bookBoxLink {
             margin-top: .75em;
         }
-
         .bookBoxTitle{
             margin: .75em 0;
             @media only screen and (max-width: 1199px){
@@ -105,15 +112,9 @@ body {
     }
 }
 
-/* .info:nth-child(2n) {
-    background-color: $dark-beige;
-    .infoImg{
-        order: 2 !important;
-        @media all and (max-width: 1399px){
-            order: 0 !important;
-        }
-    }
-} */
+.infoTitle {
+    margin-top: 1em;
+}
 
 .overlay {
     position: relative;
@@ -128,14 +129,12 @@ body {
             opacity: 1;
         }
     }
-
     .overlayImage {
         display: block;
         opacity: 1;
         @include setSize(100%, auto);
         transition: .5s ease;
     }
-
     .overlayText {
         position: absolute;
         top: 50%;
@@ -159,10 +158,6 @@ body {
     }
 }
 
-.infoTitle {
-    margin-top: 1em;
-}
-
 .specialBg {
     background-color: $dark-beige;
 }
@@ -172,29 +167,24 @@ body {
     color: $light-beige;
     padding: 2em 1em;
     margin-top: 5em;
-
     .footerTitle {
         font-weight: bold;
         font-size: 1.2em;
         margin: .5em 0;
     }
-
     .footerElement {
         font-size: .8em;
         text-align: justify;
     }
 }
 
-.btn {
-    &.btn-primary {
-        background-color: $dark-blue !important;
-        border-color: $dark-blue !important;
+.footerElement{
+    .bxs-map{
+        color:#ffffff
     }
-    &.btn-redes{
-        width: 3rem;
-        height: 3rem;
-        line-height: 2.75rem;
-        padding: 0;
-        border-radius: 2em;
+    .i-rrss {
+        color:rgb(192, 192, 192);
+        line-height: 2;
     }
 }
+

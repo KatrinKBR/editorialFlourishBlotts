@@ -24,6 +24,18 @@ body {
   background-image: url("../assets/hamburger.svg");
 }
 
+.btn.btn-primary {
+  background-color: #181D31 !important;
+  border-color: #181D31 !important;
+}
+
+.btn.btn-redes {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: 2em;
+}
+
 .banner {
   background-image: url("../assets/banner.webp");
   background-position: center;
@@ -144,15 +156,10 @@ body {
   }
 }
 
-/* .info:nth-child(2n) {
-    background-color: $dark-beige;
-    .infoImg{
-        order: 2 !important;
-        @media all and (max-width: 1399px){
-            order: 0 !important;
-        }
-    }
-} */
+.infoTitle {
+  margin-top: 1em;
+}
+
 .overlay {
   position: relative;
   width: 100%;
@@ -204,10 +211,6 @@ body {
   }
 }
 
-.infoTitle {
-  margin-top: 1em;
-}
-
 .specialBg {
   background-color: #F0E9D2;
 }
@@ -230,16 +233,12 @@ body {
   text-align: justify;
 }
 
-.btn.btn-primary {
-  background-color: #181D31 !important;
-  border-color: #181D31 !important;
+.footerElement .bxs-map {
+  color: #ffffff;
 }
 
-.btn.btn-redes {
-  width: 3rem;
-  height: 3rem;
-  line-height: 2.75rem;
-  padding: 0;
-  border-radius: 2em;
+.footerElement .i-rrss {
+  color: silver;
+  line-height: 2;
 }
 /*# sourceMappingURL=style.css.map */
