@@ -44,6 +44,24 @@ body {
     }
 }
 
+.nombreAutor {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    &::before, &::after{
+        flex-grow: 1;
+        height: 2px;
+        content: '';
+        background-color: #000;
+    }
+    &::before{
+        margin-right: .5rem;
+    }
+    &::after{
+        margin-left: .5rem;
+    }
+}
+
 .content {
     text-align: justify;
     .title {
